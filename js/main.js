@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const priceRange = params.get("pricerange");
 
     if (minDiscount) {
-        discountSlider.noUiSlider.set(parseInt(params.get("mindiscount")));
+        discountSlider.noUiSlider.set(parseInt(minDiscount));
     }
     if (priceRange) {
         priceSlider.noUiSlider.set(priceRange.split(','));
